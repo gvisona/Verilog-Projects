@@ -1,0 +1,15 @@
+MO Module_14bit_oscillator NULL "Source Files/module_oscillator14bit.v" vlg04/_module__14bit__oscillator.bin 1455267605
+MO OscillatorMultiplication NULL "Source Files/OscillatorMultiplication.v" vlg4A/_oscillator_multiplication.bin 1455267605
+MO LockIn_Amplifier NULL LockIn_Amplifier.v vlg44/_lock_in___amplifier.bin 1455267605
+MO DAC_Driver NULL "Source Files/header_DAC_driver.v" vlg2F/_d_a_c___driver.bin 1455267605
+MO DegreeMultiplier NULL ipcore_dir/DegreeMultiplier.v vlg2F/_degree_multiplier.bin 1455267605
+MO LCD_Driver_pm10to4 NULL "Source Files/header_LCD_driver_pm10to4.v" vlg7E/_l_c_d___driver__pm10to4.bin 1455267605
+MO RectangularToPolar NULL "Source Files/RectangularToPolar.v" vlg11/_rectangular_to_polar.bin 1455267605
+MO Module_LowPassFilter NULL "Source Files/module_lowPassFilter.v" vlg50/_module___low_pass_filter.bin 1455267605
+MO Module_Knob_Controller NULL "Source Files/module_knob_controller.v" vlg22/_module___knob___controller.bin 1455267605
+MO Module_FrequencyDivider NULL "Source Files/module_frequency_divider.v" vlg0A/_module___frequency_divider.bin 1455267605
+MO ADC_Driver NULL "Source Files/header_ADC_driver.v" vlg23/_a_d_c___driver.bin 1455267605
+MO Module_Chopper_Generator NULL "Source Files/module_chopper_generator.v" vlg0C/_module___chopper___generator.bin 1455267605
+MO Module_SynchroChopper NULL "Source Files/module_synchro_chopper.v" vlg04/_module___synchro_chopper.bin 1455267605
+MO Module_4Digit_BCD_Converter NULL "Source Files/module_binary_2_BCD.v" vlg41/_module__4_digit___b_c_d___converter.bin 1455267605
+MO PiDivider NULL ipcore_dir/PiDivider.v vlg70/_pi_divider.bin 1455267605

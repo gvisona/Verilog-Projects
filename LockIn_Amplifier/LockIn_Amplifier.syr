@@ -1,0 +1,856 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Reading design: LockIn_Amplifier.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "LockIn_Amplifier.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "LockIn_Amplifier"
+Output Format                      : NGC
+Target Device                      : xc3s700an-4-fgg484
+
+---- Source Options
+Top Module Name                    : LockIn_Amplifier
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"Source Files" "ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "Source Files/RectangularToPolar.v" in library work
+Compiling verilog file "Source Files/OscillatorMultiplication.v" in library work
+Module <RectangularToPolar> compiled
+Compiling verilog file "Source Files/module_synchro_chopper.v" in library work
+Module <OscillatorMultiplication> compiled
+Compiling verilog file "Source Files/module_oscillator14bit.v" in library work
+Module <Module_SynchroChopper> compiled
+Compiling verilog file "Source Files/module_lowPassFilter.v" in library work
+Module <Module_14bit_oscillator> compiled
+Compiling verilog file "Source Files/module_knob_controller.v" in library work
+Module <Module_LowPassFilter> compiled
+Compiling verilog file "Source Files/module_frequency_divider.v" in library work
+Module <Module_Knob_Controller> compiled
+Compiling verilog file "Source Files/module_chopper_generator.v" in library work
+Module <Module_FrequencyDivider> compiled
+Compiling verilog file "Source Files/module_binary_2_BCD.v" in library work
+Module <Module_Chopper_Generator> compiled
+Compiling verilog file "Source Files/header_LCD_driver_pm10to4.v" in library work
+Module <Module_4Digit_BCD_Converter> compiled
+Compiling verilog file "Source Files/header_DAC_driver.v" in library work
+Module <LCD_Driver_pm10to4> compiled
+Compiling verilog file "Source Files/header_ADC_driver.v" in library work
+Module <DAC_Driver> compiled
+Compiling verilog file "ipcore_dir/PiDivider.v" in library work
+Module <ADC_Driver> compiled
+Compiling verilog file "ipcore_dir/DegreeMultiplier.v" in library work
+Module <PiDivider> compiled
+Compiling verilog file "LockIn_Amplifier.v" in library work
+WARNING:HDLCompilers:38 - "LockIn_Amplifier.v" line 21 Macro 'NEG' redefined
+Module <DegreeMultiplier> compiled
+Module <LockIn_Amplifier> compiled
+No errors in compilation
+Analysis of file <"LockIn_Amplifier.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <LockIn_Amplifier> in library <work>.
+
+Analyzing hierarchy for module <Module_Knob_Controller> in library <work>.
+
+Analyzing hierarchy for module <Module_FrequencyDivider> in library <work>.
+
+Analyzing hierarchy for module <Module_Chopper_Generator> in library <work>.
+
+Analyzing hierarchy for module <Module_SynchroChopper> in library <work>.
+
+Analyzing hierarchy for module <Module_14bit_oscillator> in library <work>.
+
+Analyzing hierarchy for module <Module_LowPassFilter> in library <work>.
+
+Analyzing hierarchy for module <Module_4Digit_BCD_Converter> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <LockIn_Amplifier>.
+WARNING:Xst:2211 - "Source Files/header_ADC_driver.v" line 122: Instantiating black box module <ADC_Driver>.
+WARNING:Xst:2211 - "Source Files/header_DAC_driver.v" line 133: Instantiating black box module <DAC_Driver>.
+WARNING:Xst:2211 - "Source Files/OscillatorMultiplication.v" line 215: Instantiating black box module <OscillatorMultiplication>.
+WARNING:Xst:2211 - "Source Files/OscillatorMultiplication.v" line 225: Instantiating black box module <OscillatorMultiplication>.
+WARNING:Xst:2211 - "Source Files/RectangularToPolar.v" line 282: Instantiating black box module <RectangularToPolar>.
+WARNING:Xst:2211 - "ipcore_dir/DegreeMultiplier.v" line 309: Instantiating black box module <DegreeMultiplier>.
+WARNING:Xst:2211 - "ipcore_dir/PiDivider.v" line 316: Instantiating black box module <PiDivider>.
+WARNING:Xst:2211 - "Source Files/header_LCD_driver_pm10to4.v" line 340: Instantiating black box module <LCD_Driver_pm10to4>.
+Module <LockIn_Amplifier> is correct for synthesis.
+ 
+    Set user-defined property "SYN_BLACK_BOX =  1" for instance <mixer1> in unit <LockIn_Amplifier>.
+    Set user-defined property "SYN_NOPRUNE =  1" for instance <mixer1> in unit <LockIn_Amplifier>.
+    Set user-defined property "SYN_BLACK_BOX =  1" for instance <mixer2> in unit <LockIn_Amplifier>.
+    Set user-defined property "SYN_NOPRUNE =  1" for instance <mixer2> in unit <LockIn_Amplifier>.
+    Set user-defined property "SYN_BLACK_BOX =  1" for instance <conversion> in unit <LockIn_Amplifier>.
+    Set user-defined property "SYN_NOPRUNE =  1" for instance <conversion> in unit <LockIn_Amplifier>.
+    Set user-defined property "SYN_BLACK_BOX =  1" for instance <conversion_to_degrees> in unit <LockIn_Amplifier>.
+    Set user-defined property "SYN_NOPRUNE =  1" for instance <conversion_to_degrees> in unit <LockIn_Amplifier>.
+    Set user-defined property "SYN_BLACK_BOX =  1" for instance <YourInstanceName> in unit <LockIn_Amplifier>.
+    Set user-defined property "SYN_NOPRUNE =  1" for instance <YourInstanceName> in unit <LockIn_Amplifier>.
+Analyzing module <Module_Knob_Controller> in library <work>.
+Module <Module_Knob_Controller> is correct for synthesis.
+ 
+Analyzing module <Module_FrequencyDivider> in library <work>.
+Module <Module_FrequencyDivider> is correct for synthesis.
+ 
+Analyzing module <Module_Chopper_Generator> in library <work>.
+Module <Module_Chopper_Generator> is correct for synthesis.
+ 
+Analyzing module <Module_SynchroChopper> in library <work>.
+Module <Module_SynchroChopper> is correct for synthesis.
+ 
+Analyzing module <Module_14bit_oscillator> in library <work>.
+Module <Module_14bit_oscillator> is correct for synthesis.
+ 
+    Set property "SYN_NOPRUNE = 1" for unit <OscillatorMultiplication>.
+    Set property "SYN_NOPRUNE = 1" for unit <OscillatorMultiplication>.
+Analyzing module <Module_LowPassFilter> in library <work>.
+Module <Module_LowPassFilter> is correct for synthesis.
+ 
+    Set property "SYN_NOPRUNE = 1" for unit <RectangularToPolar>.
+    Set property "SYN_NOPRUNE = 1" for unit <DegreeMultiplier>.
+    Set property "SYN_NOPRUNE = 1" for unit <PiDivider>.
+Analyzing module <Module_4Digit_BCD_Converter> in library <work>.
+Module <Module_4Digit_BCD_Converter> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Module_Knob_Controller>.
+    Related source file is "Source Files/module_knob_controller.v".
+    Found finite state machine <FSM_0> for signal <status>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 13                                             |
+    | Inputs             | 2                                              |
+    | Outputs            | 5                                              |
+    | Clock              | qzt_clk                   (rising_edge)        |
+    | Clock enable       | status$not0000            (positive)           |
+    | Reset              | status$and0000            (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 00                                             |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 12-bit adder for signal <out>.
+    Found 12-bit register for signal <counter>.
+    Found 12-bit comparator greatequal for signal <counter$cmp_ge0000> created at line 44.
+    Found 12-bit comparator lessequal for signal <counter$cmp_le0000> created at line 39.
+    Found 12-bit addsub for signal <counter$share0000>.
+    Found 12-bit adder for signal <out$addsub0000> created at line 26.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  12 D-type flip-flop(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+Unit <Module_Knob_Controller> synthesized.
+
+
+Synthesizing Unit <Module_FrequencyDivider>.
+    Related source file is "Source Files/module_frequency_divider.v".
+    Found 1-bit register for signal <clk_out>.
+    Found 14-bit subtractor for signal <$sub0000> created at line 20.
+    Found 12-bit up counter for signal <counter>.
+    Found 14-bit comparator equal for signal <counter$cmp_eq0000> created at line 20.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+Unit <Module_FrequencyDivider> synthesized.
+
+
+Synthesizing Unit <Module_Chopper_Generator>.
+    Related source file is "Source Files/module_chopper_generator.v".
+    Found 1-bit register for signal <clk_out1>.
+    Found 1-bit register for signal <clk_out2>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <Module_Chopper_Generator> synthesized.
+
+
+Synthesizing Unit <Module_SynchroChopper>.
+    Related source file is "Source Files/module_synchro_chopper.v".
+    Found 14-bit register for signal <out_sig>.
+    Summary:
+	inferred  14 D-type flip-flop(s).
+Unit <Module_SynchroChopper> synthesized.
+
+
+Synthesizing Unit <Module_14bit_oscillator>.
+    Related source file is "Source Files/module_oscillator14bit.v".
+    Found 14-bit register for signal <clk_out>.
+    Found 14-bit adder for signal <clk_out$add0000> created at line 16.
+    Summary:
+	inferred  14 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <Module_14bit_oscillator> synthesized.
+
+
+Synthesizing Unit <Module_LowPassFilter>.
+    Related source file is "Source Files/module_lowPassFilter.v".
+    Found 28-bit up accumulator for signal <Vout>.
+    Found 1-bit register for signal <clk_in_old>.
+    Found 28-bit adder for signal <Vout$add0000>.
+    Found 28-bit adder for signal <Vout$addsub0000> created at line 25.
+    Found 28-bit adder for signal <Vout$addsub0001> created at line 25.
+    Found 28-bit adder for signal <Vout$addsub0002> created at line 25.
+    Found 28-bit adder for signal <Vout$addsub0003> created at line 25.
+    Found 28-bit shifter logical right for signal <Vout$shift0000> created at line 25.
+    Found 28-bit shifter logical right for signal <Vout$shift0001> created at line 25.
+    Found 28-bit shifter logical right for signal <Vout$shift0002> created at line 25.
+    Found 28-bit shifter logical right for signal <Vout$shift0003> created at line 25.
+    Summary:
+	inferred   1 Accumulator(s).
+	inferred   1 D-type flip-flop(s).
+	inferred   5 Adder/Subtractor(s).
+	inferred   4 Combinational logic shifter(s).
+Unit <Module_LowPassFilter> synthesized.
+
+
+Synthesizing Unit <Module_4Digit_BCD_Converter>.
+    Related source file is "Source Files/module_binary_2_BCD.v".
+    Found 16-bit register for signal <fourDigitOutput>.
+    Found 4-bit adder for signal <$add0000> created at line 43.
+    Found 4-bit adder for signal <$add0001> created at line 46.
+    Found 4-bit adder for signal <$add0002> created at line 49.
+    Found 4-bit adder for signal <$add0003> created at line 52.
+    Found 1-bit register for signal <busy>.
+    Found 14-bit comparator greater for signal <busy$cmp_gt0000> created at line 23.
+    Found 14-bit comparator not equal for signal <busy$cmp_ne0000> created at line 20.
+    Found 14-bit comparator not equal for signal <busy$cmp_ne0001> created at line 26.
+    Found 14-bit up counter for signal <counter>.
+    Found 16-bit register for signal <counterBCD>.
+    Found 14-bit comparator equal for signal <counterBCD_15$cmp_eq0000> created at line 26.
+    Found 14-bit comparator lessequal for signal <fourDigitOutput$cmp_le0000> created at line 23.
+    Found 14-bit register for signal <fourteenBitsUnsignedIntegerOld>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  47 D-type flip-flop(s).
+	inferred   4 Adder/Subtractor(s).
+	inferred   5 Comparator(s).
+Unit <Module_4Digit_BCD_Converter> synthesized.
+
+
+Synthesizing Unit <LockIn_Amplifier>.
+    Related source file is "LockIn_Amplifier.v".
+WARNING:Xst:646 - Signal <wb_radius<15:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <wb_phase_degrees<21:14>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <wb_phase<12:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <wb_V2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 32-bit adder for signal <wb_output_with_correction$add0000> created at line 300.
+    Found 32-bit adder for signal <wb_output_with_correction$add0001> created at line 300.
+    Found 32-bit adder for signal <wb_output_with_correction$addsub0000> created at line 300.
+    Found 32-bit adder for signal <wb_output_with_correction$addsub0001> created at line 300.
+    Found 32-bit adder for signal <wb_output_with_correction$addsub0002> created at line 300.
+    Found 32-bit adder for signal <wb_output_with_correction$addsub0003> created at line 300.
+    Found 12-bit adder for signal <wb_output_with_correction$addsub0004> created at line 300.
+    Found 12-bit adder for signal <wb_output_with_correction$addsub0005> created at line 300.
+    Found 12-bit adder for signal <wb_output_with_correction$addsub0006> created at line 300.
+    Found 12-bit adder for signal <wb_output_with_correction$addsub0007> created at line 300.
+    Found 12-bit adder for signal <wb_output_with_correction$addsub0008> created at line 300.
+    Found 12-bit adder for signal <wb_output_with_correction$addsub0009> created at line 300.
+    Found 12-bit adder for signal <wb_output_with_correction$addsub0010> created at line 300.
+    Found 12-bit adder for signal <wb_output_with_correction$addsub0011> created at line 300.
+    Summary:
+	inferred  14 Adder/Subtractor(s).
+Unit <LockIn_Amplifier> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 44
+ 12-bit adder                                          : 10
+ 12-bit addsub                                         : 1
+ 14-bit adder                                          : 1
+ 14-bit subtractor                                     : 2
+ 28-bit adder                                          : 20
+ 32-bit adder                                          : 6
+ 4-bit adder                                           : 4
+# Counters                                             : 3
+ 12-bit up counter                                     : 2
+ 14-bit up counter                                     : 1
+# Accumulators                                         : 4
+ 28-bit up accumulator                                 : 4
+# Registers                                            : 31
+ 1-bit register                                        : 25
+ 12-bit register                                       : 1
+ 14-bit register                                       : 4
+ 16-bit register                                       : 1
+# Comparators                                          : 9
+ 12-bit comparator greatequal                          : 1
+ 12-bit comparator lessequal                           : 1
+ 14-bit comparator equal                               : 3
+ 14-bit comparator greater                             : 1
+ 14-bit comparator lessequal                           : 1
+ 14-bit comparator not equal                           : 2
+# Logic shifters                                       : 16
+ 28-bit shifter logical right                          : 16
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <chopper_period_control/status/FSM> on signal <status[1:2]> with sequential encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 11
+ 11    | 10
+-------------------
+Reading core <Source Files/ADC_Driver.ngc>.
+Reading core <Source Files/DAC_Driver.ngc>.
+Reading core <Source Files/OscillatorMultiplication.ngc>.
+Reading Secure Unit <blk00000001>.
+Reading core <Source Files/RectangularToPolar.ngc>.
+Reading Secure Unit <blk00000003>.
+Reading core <ipcore_dir/DegreeMultiplier.ngc>.
+Reading Secure Unit <blk00000001>.
+Reading core <ipcore_dir/PiDivider.ngc>.
+Reading core <Source Files/LCD_Driver_pm10to4.ngc>.
+Loading core <ADC_Driver> for timing and area information for instance <ADC_Driver>.
+Loading core <DAC_Driver> for timing and area information for instance <DAC_Driver>.
+Loading core <OscillatorMultiplication> for timing and area information for instance <mixer1>.
+Loading core <OscillatorMultiplication> for timing and area information for instance <mixer2>.
+Loading core <RectangularToPolar> for timing and area information for instance <conversion>.
+Loading core <DegreeMultiplier> for timing and area information for instance <conversion_to_degrees>.
+Loading core <PiDivider> for timing and area information for instance <YourInstanceName>.
+Loading core <LCD_Driver_pm10to4> for timing and area information for instance <LCD_driver_pm10to4>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# Adders/Subtractors                                   : 44
+ 12-bit adder                                          : 13
+ 12-bit addsub                                         : 1
+ 14-bit adder                                          : 1
+ 14-bit subtractor                                     : 2
+ 20-bit adder                                          : 1
+ 28-bit adder                                          : 20
+ 32-bit adder                                          : 2
+ 4-bit adder                                           : 4
+# Counters                                             : 3
+ 12-bit up counter                                     : 2
+ 14-bit up counter                                     : 1
+# Accumulators                                         : 4
+ 28-bit up accumulator                                 : 4
+# Registers                                            : 109
+ Flip-Flops                                            : 109
+# Comparators                                          : 9
+ 12-bit comparator greatequal                          : 1
+ 12-bit comparator lessequal                           : 1
+ 14-bit comparator equal                               : 3
+ 14-bit comparator greater                             : 1
+ 14-bit comparator lessequal                           : 1
+ 14-bit comparator not equal                           : 2
+# Logic shifters                                       : 16
+ 28-bit shifter logical right                          : 16
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <LockIn_Amplifier> ...
+
+Optimizing unit <Module_Knob_Controller> ...
+
+Optimizing unit <Module_14bit_oscillator> ...
+
+Optimizing unit <Module_LowPassFilter> ...
+
+Optimizing unit <Module_4Digit_BCD_Converter> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+INFO:Xst:2261 - The FF/Latch <LPF_additional_ninety/clk_in_old> in Unit <LockIn_Amplifier> is equivalent to the following 3 FFs/Latches, which will be removed : <LPF_ninety/clk_in_old> <LPF_additional/clk_in_old> <LPF/clk_in_old> 
+Found area constraint ratio of 100 (+ 5) on block LockIn_Amplifier, actual ratio is 72.
+INFO:Xst:2260 - The FF/Latch <blk00002c95> in Unit <conversion> is equivalent to the following FF/Latch : <blk00002d4e> 
+INFO:Xst:2260 - The FF/Latch <counter_13> in Unit <LCD_driver_pm10to4> is equivalent to the following FF/Latch : <counter_13_1> 
+INFO:Xst:2260 - The FF/Latch <counter_12> in Unit <LCD_driver_pm10to4> is equivalent to the following FF/Latch : <counter_12_1> 
+INFO:Xst:2260 - The FF/Latch <blk00002c95> in Unit <conversion> is equivalent to the following FF/Latch : <blk00002d4e> 
+INFO:Xst:2260 - The FF/Latch <counter_13> in Unit <LCD_driver_pm10to4> is equivalent to the following FF/Latch : <counter_13_1> 
+INFO:Xst:2260 - The FF/Latch <counter_12> in Unit <LCD_driver_pm10to4> is equivalent to the following FF/Latch : <counter_12_1> 
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 258
+ Flip-Flops                                            : 258
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : LockIn_Amplifier.ngr
+Top Level Output File Name         : LockIn_Amplifier
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 25
+
+Cell Usage :
+# BELS                             : 6276
+#      GND                         : 6
+#      INV                         : 348
+#      LUT1                        : 158
+#      LUT2                        : 416
+#      LUT2_D                      : 4
+#      LUT2_L                      : 3
+#      LUT3                        : 1179
+#      LUT3_D                      : 228
+#      LUT3_L                      : 61
+#      LUT4                        : 1009
+#      LUT4_D                      : 30
+#      LUT4_L                      : 112
+#      MULT_AND                    : 19
+#      MUXCY                       : 1296
+#      MUXF5                       : 102
+#      VCC                         : 6
+#      XORCY                       : 1299
+# FlipFlops/Latches                : 1919
+#      FD                          : 1345
+#      FDE                         : 261
+#      FDR                         : 82
+#      FDRE                        : 222
+#      FDS                         : 7
+#      FDSE                        : 2
+# Shift Registers                  : 36
+#      SRL16                       : 28
+#      SRL16E                      : 5
+#      SRLC16E                     : 3
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 24
+#      IBUF                        : 7
+#      OBUF                        : 17
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s700anfgg484-4 
+
+ Number of Slices:                     4170  out of   5888    70%  
+ Number of Slice Flip Flops:           1919  out of  11776    16%  
+ Number of 4 input LUTs:               3584  out of  11776    30%  
+    Number used as logic:              3548
+    Number used as Shift registers:      36
+ Number of IOs:                          25
+ Number of bonded IOBs:                  25  out of    372     6%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+----------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)            | Load  |
+-----------------------------------+----------------------------------+-------+
+CLK_50M                            | BUFGP                            | 4627  |
+chopper_clock/clk_out              | NONE(multiplicator_clock/clk_out)| 15    |
+DAC_Driver/SPI_SCK                 | NONE(chopper_clock/clk_out)      | 13    |
+multiplicator_clock/clk_out        | NONE(demodulator/clk_out_13)     | 14    |
+-----------------------------------+----------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 23.082ns (Maximum Frequency: 43.324MHz)
+   Minimum input arrival time before clock: 16.581ns
+   Maximum output required time after clock: 7.030ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK_50M'
+  Clock period: 23.082ns (frequency: 43.324MHz)
+  Total number of paths / destination ports: 70426604 / 4995
+-------------------------------------------------------------------------
+Delay:               23.082ns (Levels of Logic = 27)
+  Source:            ADC_Driver/V1_V2_27 (FF)
+  Destination:       DAC_Driver/DAC_Driver/V_copy_9 (FF)
+  Source Clock:      CLK_50M rising
+  Destination Clock: CLK_50M rising
+
+  Data Path: ADC_Driver/V1_V2_27 to DAC_Driver/DAC_Driver/V_copy_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             72   0.591   1.355  V1_V2_27 (V1_V2<27>)
+     end scope: 'ADC_Driver'
+     LUT2:I1->O            5   0.643   0.633  wb_output_final<6>1 (wb_output_final<6>)
+     INV:I->O              1   0.648   0.000  Madd_wb_output_with_correction_not0000<6>1_INV_0 (Madd_wb_output_with_correction_not0000<6>)
+     XORCY:LI->O           8   0.720   0.900  Madd_wb_output_with_correction_add0000_Madd_xor<6> (wb_output_with_correction_add0000<6>)
+     LUT1:I0->O            1   0.648   0.000  Madd_wb_output_with_correction_addsub0005_cy<0>_rt (Madd_wb_output_with_correction_addsub0005_cy<0>_rt)
+     MUXCY:S->O            1   0.632   0.000  Madd_wb_output_with_correction_addsub0005_cy<0> (Madd_wb_output_with_correction_addsub0005_cy<0>)
+     XORCY:CI->O           2   0.844   0.450  Madd_wb_output_with_correction_addsub0005_xor<1> (wb_output_with_correction_addsub0005<1>)
+     LUT4:I3->O            1   0.648   0.452  Madd_wb_output_with_correction_addsub0006R1111 (Madd_wb_output_with_correction_addsub0006R1)
+     LUT3:I2->O            1   0.648   0.000  Madd_wb_output_with_correction_addsub0006_Madd_lut<1> (Madd_wb_output_with_correction_addsub0006_Madd_lut<1>)
+     MUXCY:S->O            1   0.632   0.000  Madd_wb_output_with_correction_addsub0006_Madd_cy<1> (Madd_wb_output_with_correction_addsub0006_Madd_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  Madd_wb_output_with_correction_addsub0006_Madd_cy<2> (Madd_wb_output_with_correction_addsub0006_Madd_cy<2>)
+     MUXCY:CI->O           1   0.065   0.000  Madd_wb_output_with_correction_addsub0006_Madd_cy<3> (Madd_wb_output_with_correction_addsub0006_Madd_cy<3>)
+     MUXCY:CI->O           1   0.065   0.000  Madd_wb_output_with_correction_addsub0006_Madd_cy<4> (Madd_wb_output_with_correction_addsub0006_Madd_cy<4>)
+     MUXCY:CI->O           1   0.065   0.000  Madd_wb_output_with_correction_addsub0006_Madd_cy<5> (Madd_wb_output_with_correction_addsub0006_Madd_cy<5>)
+     XORCY:CI->O           1   0.844   0.500  Madd_wb_output_with_correction_addsub0006_Madd_xor<6> (wb_output_with_correction_addsub0006<6>)
+     LUT2:I1->O            1   0.643   0.000  Madd_wb_output_with_correction_addsub0008_Madd_lut<6> (Madd_wb_output_with_correction_addsub0008_Madd_lut<6>)
+     MUXCY:S->O            1   0.632   0.000  Madd_wb_output_with_correction_addsub0008_Madd_cy<6> (Madd_wb_output_with_correction_addsub0008_Madd_cy<6>)
+     XORCY:CI->O           1   0.844   0.500  Madd_wb_output_with_correction_addsub0008_Madd_xor<7> (wb_output_with_correction_addsub0008<7>)
+     LUT2:I1->O            1   0.643   0.000  Madd_wb_output_with_correction_addsub0010_Madd_lut<7> (Madd_wb_output_with_correction_addsub0010_Madd_lut<7>)
+     MUXCY:S->O            1   0.632   0.000  Madd_wb_output_with_correction_addsub0010_Madd_cy<7> (Madd_wb_output_with_correction_addsub0010_Madd_cy<7>)
+     XORCY:CI->O           1   0.844   0.563  Madd_wb_output_with_correction_addsub0010_Madd_xor<8> (wb_output_with_correction_addsub0010<8>)
+     LUT1:I0->O            1   0.648   0.000  Madd_wb_output_with_correction_addsub0011_cy<8>_rt (Madd_wb_output_with_correction_addsub0011_cy<8>_rt)
+     MUXCY:S->O            1   0.632   0.000  Madd_wb_output_with_correction_addsub0011_cy<8> (Madd_wb_output_with_correction_addsub0011_cy<8>)
+     XORCY:CI->O           1   0.844   0.423  Madd_wb_output_with_correction_addsub0011_xor<9> (wb_output_with_correction_addsub0011<9>)
+     LUT4:I3->O            1   0.648   0.500  wb_output_with_correction<9>1 (wb_output_with_correction<9>)
+     begin scope: 'DAC_Driver'
+     LUT3:I1->O            1   0.643   0.500  DAC_Driver/V_copy_mux0000<9>_SW2 (N55)
+     LUT3:I1->O            1   0.643   0.000  DAC_Driver/V_copy_mux0000<9> (DAC_Driver/V_copy_mux0000<9>)
+     FDE:D                     0.252          DAC_Driver/V_copy_9
+    ----------------------------------------
+    Total                     23.082ns (16.306ns logic, 6.776ns route)
+                                       (70.6% logic, 29.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'chopper_clock/clk_out'
+  Clock period: 4.892ns (frequency: 204.415MHz)
+  Total number of paths / destination ports: 243 / 30
+-------------------------------------------------------------------------
+Delay:               4.892ns (Levels of Logic = 2)
+  Source:            multiplicator_clock/counter_7 (FF)
+  Destination:       multiplicator_clock/counter_0 (FF)
+  Source Clock:      chopper_clock/clk_out rising
+  Destination Clock: chopper_clock/clk_out rising
+
+  Data Path: multiplicator_clock/counter_7 to multiplicator_clock/counter_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.591   0.590  multiplicator_clock/counter_7 (multiplicator_clock/counter_7)
+     LUT4:I0->O            1   0.648   0.563  multiplicator_clock/counter_cmp_eq000012 (multiplicator_clock/counter_cmp_eq000012)
+     LUT3:I0->O           13   0.648   0.983  multiplicator_clock/counter_cmp_eq000051 (multiplicator_clock/counter_cmp_eq0000)
+     FDR:R                     0.869          multiplicator_clock/counter_0
+    ----------------------------------------
+    Total                      4.892ns (2.756ns logic, 2.136ns route)
+                                       (56.3% logic, 43.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'DAC_Driver/SPI_SCK'
+  Clock period: 4.779ns (frequency: 209.249MHz)
+  Total number of paths / destination ports: 235 / 26
+-------------------------------------------------------------------------
+Delay:               4.779ns (Levels of Logic = 8)
+  Source:            chopper_clock/counter_0 (FF)
+  Destination:       chopper_clock/counter_0 (FF)
+  Source Clock:      DAC_Driver/SPI_SCK rising
+  Destination Clock: DAC_Driver/SPI_SCK rising
+
+  Data Path: chopper_clock/counter_0 to chopper_clock/counter_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.591   0.590  chopper_clock/counter_0 (chopper_clock/counter_0)
+     LUT4:I0->O            1   0.648   0.000  chopper_clock/Mcompar_counter_cmp_eq0000_lut<0> (chopper_clock/Mcompar_counter_cmp_eq0000_lut<0>)
+     MUXCY:S->O            1   0.632   0.000  chopper_clock/Mcompar_counter_cmp_eq0000_cy<0> (chopper_clock/Mcompar_counter_cmp_eq0000_cy<0>)
+     MUXCY:CI->O           1   0.065   0.000  chopper_clock/Mcompar_counter_cmp_eq0000_cy<1> (chopper_clock/Mcompar_counter_cmp_eq0000_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  chopper_clock/Mcompar_counter_cmp_eq0000_cy<2> (chopper_clock/Mcompar_counter_cmp_eq0000_cy<2>)
+     MUXCY:CI->O           1   0.065   0.000  chopper_clock/Mcompar_counter_cmp_eq0000_cy<3> (chopper_clock/Mcompar_counter_cmp_eq0000_cy<3>)
+     MUXCY:CI->O           1   0.065   0.000  chopper_clock/Mcompar_counter_cmp_eq0000_cy<4> (chopper_clock/Mcompar_counter_cmp_eq0000_cy<4>)
+     MUXCY:CI->O           1   0.065   0.000  chopper_clock/Mcompar_counter_cmp_eq0000_cy<5> (chopper_clock/Mcompar_counter_cmp_eq0000_cy<5>)
+     MUXCY:CI->O          13   0.141   0.983  chopper_clock/Mcompar_counter_cmp_eq0000_cy<6> (chopper_clock/Mcompar_counter_cmp_eq0000_cy<6>)
+     FDR:R                     0.869          chopper_clock/counter_0
+    ----------------------------------------
+    Total                      4.779ns (3.206ns logic, 1.573ns route)
+                                       (67.1% logic, 32.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'multiplicator_clock/clk_out'
+  Clock period: 5.155ns (frequency: 193.996MHz)
+  Total number of paths / destination ports: 105 / 14
+-------------------------------------------------------------------------
+Delay:               5.155ns (Levels of Logic = 15)
+  Source:            demodulator/clk_out_0 (FF)
+  Destination:       demodulator/clk_out_13 (FF)
+  Source Clock:      multiplicator_clock/clk_out rising
+  Destination Clock: multiplicator_clock/clk_out rising
+
+  Data Path: demodulator/clk_out_0 to demodulator/clk_out_13
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              40   0.591   1.408  demodulator/clk_out_0 (demodulator/clk_out_0)
+     LUT1:I0->O            1   0.648   0.000  demodulator/Madd_clk_out_add0000_cy<0>_rt (demodulator/Madd_clk_out_add0000_cy<0>_rt)
+     MUXCY:S->O            1   0.632   0.000  demodulator/Madd_clk_out_add0000_cy<0> (demodulator/Madd_clk_out_add0000_cy<0>)
+     MUXCY:CI->O           1   0.065   0.000  demodulator/Madd_clk_out_add0000_cy<1> (demodulator/Madd_clk_out_add0000_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  demodulator/Madd_clk_out_add0000_cy<2> (demodulator/Madd_clk_out_add0000_cy<2>)
+     MUXCY:CI->O           1   0.065   0.000  demodulator/Madd_clk_out_add0000_cy<3> (demodulator/Madd_clk_out_add0000_cy<3>)
+     MUXCY:CI->O           1   0.065   0.000  demodulator/Madd_clk_out_add0000_cy<4> (demodulator/Madd_clk_out_add0000_cy<4>)
+     MUXCY:CI->O           1   0.065   0.000  demodulator/Madd_clk_out_add0000_cy<5> (demodulator/Madd_clk_out_add0000_cy<5>)
+     MUXCY:CI->O           1   0.065   0.000  demodulator/Madd_clk_out_add0000_cy<6> (demodulator/Madd_clk_out_add0000_cy<6>)
+     MUXCY:CI->O           1   0.065   0.000  demodulator/Madd_clk_out_add0000_cy<7> (demodulator/Madd_clk_out_add0000_cy<7>)
+     MUXCY:CI->O           1   0.065   0.000  demodulator/Madd_clk_out_add0000_cy<8> (demodulator/Madd_clk_out_add0000_cy<8>)
+     MUXCY:CI->O           1   0.065   0.000  demodulator/Madd_clk_out_add0000_cy<9> (demodulator/Madd_clk_out_add0000_cy<9>)
+     MUXCY:CI->O           1   0.065   0.000  demodulator/Madd_clk_out_add0000_cy<10> (demodulator/Madd_clk_out_add0000_cy<10>)
+     MUXCY:CI->O           1   0.065   0.000  demodulator/Madd_clk_out_add0000_cy<11> (demodulator/Madd_clk_out_add0000_cy<11>)
+     MUXCY:CI->O           0   0.065   0.000  demodulator/Madd_clk_out_add0000_cy<12> (demodulator/Madd_clk_out_add0000_cy<12>)
+     XORCY:CI->O           1   0.844   0.000  demodulator/Madd_clk_out_add0000_xor<13> (demodulator/clk_out_add0000<13>)
+     FD:D                      0.252          demodulator/clk_out_13
+    ----------------------------------------
+    Total                      5.155ns (3.747ns logic, 1.408ns route)
+                                       (72.7% logic, 27.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK_50M'
+  Total number of paths / destination ports: 6785173 / 131
+-------------------------------------------------------------------------
+Offset:              16.581ns (Levels of Logic = 37)
+  Source:            SW<1> (PAD)
+  Destination:       LPF_ninety/Vout_27 (FF)
+  Destination Clock: CLK_50M rising
+
+  Data Path: SW<1> to LPF_ninety/Vout_27
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           513   0.849   1.553  SW_1_IBUF (SW_1_IBUF)
+     LUT3_D:I0->O          1   0.648   0.452  LPF_additional_ninety/Sh1420 (LPF_additional_ninety/Sh137)
+     LUT3:I2->O            8   0.648   0.837  LPF_additional_ninety/Sh1331 (LPF_additional_ninety/Sh13)
+     LUT4:I1->O            1   0.643   0.563  LPF_ninety/Madd_Vout_not0003<1>83 (LPF_ninety/Madd_Vout_not0003<1>83)
+     LUT3:I0->O            1   0.648   0.000  LPF_ninety/Madd_Vout_not0003<1>85 (LPF_ninety/Madd_Vout_not0003<1>)
+     MUXCY:S->O            1   0.632   0.000  LPF_ninety/Madd_Vout_addsub0003_cy<1> (LPF_ninety/Madd_Vout_addsub0003_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  LPF_ninety/Madd_Vout_addsub0003_cy<2> (LPF_ninety/Madd_Vout_addsub0003_cy<2>)
+     MUXCY:CI->O           1   0.065   0.000  LPF_ninety/Madd_Vout_addsub0003_cy<3> (LPF_ninety/Madd_Vout_addsub0003_cy<3>)
+     MUXCY:CI->O           1   0.065   0.000  LPF_ninety/Madd_Vout_addsub0003_cy<4> (LPF_ninety/Madd_Vout_addsub0003_cy<4>)
+     MUXCY:CI->O           1   0.065   0.000  LPF_ninety/Madd_Vout_addsub0003_cy<5> (LPF_ninety/Madd_Vout_addsub0003_cy<5>)
+     MUXCY:CI->O           1   0.065   0.000  LPF_ninety/Madd_Vout_addsub0003_cy<6> (LPF_ninety/Madd_Vout_addsub0003_cy<6>)
+     MUXCY:CI->O           1   0.065   0.000  LPF_ninety/Madd_Vout_addsub0003_cy<7> (LPF_ninety/Madd_Vout_addsub0003_cy<7>)
+     MUXCY:CI->O           1   0.065   0.000  LPF_ninety/Madd_Vout_addsub0003_cy<8> (LPF_ninety/Madd_Vout_addsub0003_cy<8>)
+     MUXCY:CI->O           1   0.065   0.000  LPF_ninety/Madd_Vout_addsub0003_cy<9> (LPF_ninety/Madd_Vout_addsub0003_cy<9>)
+     MUXCY:CI->O           1   0.065   0.000  LPF_ninety/Madd_Vout_addsub0003_cy<10> (LPF_ninety/Madd_Vout_addsub0003_cy<10>)
+     MUXCY:CI->O           1   0.065   0.000  LPF_ninety/Madd_Vout_addsub0003_cy<11> (LPF_ninety/Madd_Vout_addsub0003_cy<11>)
+     MUXCY:CI->O           1   0.065   0.000  LPF_ninety/Madd_Vout_addsub0003_cy<12> (LPF_ninety/Madd_Vout_addsub0003_cy<12>)
+     MUXCY:CI->O           1   0.065   0.000  LPF_ninety/Madd_Vout_addsub0003_cy<13> (LPF_ninety/Madd_Vout_addsub0003_cy<13>)
+     MUXCY:CI->O           1   0.065   0.000  LPF_ninety/Madd_Vout_addsub0003_cy<14> (LPF_ninety/Madd_Vout_addsub0003_cy<14>)
+     MUXCY:CI->O           1   0.065   0.000  LPF_ninety/Madd_Vout_addsub0003_cy<15> (LPF_ninety/Madd_Vout_addsub0003_cy<15>)
+     MUXCY:CI->O           1   0.065   0.000  LPF_ninety/Madd_Vout_addsub0003_cy<16> (LPF_ninety/Madd_Vout_addsub0003_cy<16>)
+     MUXCY:CI->O           1   0.065   0.000  LPF_ninety/Madd_Vout_addsub0003_cy<17> (LPF_ninety/Madd_Vout_addsub0003_cy<17>)
+     MUXCY:CI->O           1   0.065   0.000  LPF_ninety/Madd_Vout_addsub0003_cy<18> (LPF_ninety/Madd_Vout_addsub0003_cy<18>)
+     MUXCY:CI->O           1   0.065   0.000  LPF_ninety/Madd_Vout_addsub0003_cy<19> (LPF_ninety/Madd_Vout_addsub0003_cy<19>)
+     MUXCY:CI->O           1   0.065   0.000  LPF_ninety/Madd_Vout_addsub0003_cy<20> (LPF_ninety/Madd_Vout_addsub0003_cy<20>)
+     MUXCY:CI->O           1   0.065   0.000  LPF_ninety/Madd_Vout_addsub0003_cy<21> (LPF_ninety/Madd_Vout_addsub0003_cy<21>)
+     MUXCY:CI->O           1   0.065   0.000  LPF_ninety/Madd_Vout_addsub0003_cy<22> (LPF_ninety/Madd_Vout_addsub0003_cy<22>)
+     XORCY:CI->O           1   0.844   0.563  LPF_ninety/Madd_Vout_addsub0003_xor<23> (LPF_ninety/Vout_addsub0003<23>)
+     LUT4:I0->O            1   0.648   0.563  LPF_ninety/Vout_mux0001<23> (LPF_ninety/Vout_mux0001<23>)
+     LUT2:I0->O            1   0.648   0.000  LPF_ninety/Madd_Vout_add0000_lut<23> (LPF_ninety/Madd_Vout_add0000_lut<23>)
+     MUXCY:S->O            1   0.632   0.000  LPF_ninety/Madd_Vout_add0000_cy<23> (LPF_ninety/Madd_Vout_add0000_cy<23>)
+     MUXCY:CI->O           1   0.065   0.000  LPF_ninety/Madd_Vout_add0000_cy<24> (LPF_ninety/Madd_Vout_add0000_cy<24>)
+     MUXCY:CI->O           1   0.065   0.000  LPF_ninety/Madd_Vout_add0000_cy<25> (LPF_ninety/Madd_Vout_add0000_cy<25>)
+     XORCY:CI->O           1   0.844   0.500  LPF_ninety/Madd_Vout_add0000_xor<26> (LPF_ninety/Vout_add0000<26>)
+     LUT2:I1->O            1   0.643   0.000  LPF_ninety/Maccum_Vout_lut<26> (LPF_ninety/Maccum_Vout_lut<26>)
+     MUXCY:S->O            0   0.632   0.000  LPF_ninety/Maccum_Vout_cy<26> (LPF_ninety/Maccum_Vout_cy<26>)
+     XORCY:CI->O           1   0.844   0.000  LPF_ninety/Maccum_Vout_xor<27> (LPF_ninety/Result<27>)
+     FDE:D                     0.252          LPF_ninety/Vout_27
+    ----------------------------------------
+    Total                     16.581ns (11.550ns logic, 5.031ns route)
+                                       (69.7% logic, 30.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK_50M'
+  Total number of paths / destination ports: 13 / 11
+-------------------------------------------------------------------------
+Offset:              7.030ns (Levels of Logic = 3)
+  Source:            ADC_Driver/AMP_CS (FF)
+  Destination:       SPI_MOSI (PAD)
+  Source Clock:      CLK_50M rising
+
+  Data Path: ADC_Driver/AMP_CS to SPI_MOSI
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               7   0.591   0.851  AMP_CS (AMP_CS)
+     end scope: 'ADC_Driver'
+     LUT3:I0->O            1   0.648   0.420  SPI_MOSI1 (SPI_MOSI_OBUF)
+     OBUF:I->O                 4.520          SPI_MOSI_OBUF (SPI_MOSI)
+    ----------------------------------------
+    Total                      7.030ns (5.759ns logic, 1.271ns route)
+                                       (81.9% logic, 18.1% route)
+
+=========================================================================
+WARNING:Xst:616 - Invalid property "SYN_BLACK_BOX 1": Did not attach to mixer1.
+WARNING:Xst:616 - Invalid property "SYN_NOPRUNE 1": Did not attach to mixer1.
+WARNING:Xst:616 - Invalid property "SYN_BLACK_BOX 1": Did not attach to mixer2.
+WARNING:Xst:616 - Invalid property "SYN_NOPRUNE 1": Did not attach to mixer2.
+WARNING:Xst:616 - Invalid property "SYN_BLACK_BOX 1": Did not attach to conversion.
+WARNING:Xst:616 - Invalid property "SYN_NOPRUNE 1": Did not attach to conversion.
+WARNING:Xst:616 - Invalid property "SYN_BLACK_BOX 1": Did not attach to conversion_to_degrees.
+WARNING:Xst:616 - Invalid property "SYN_NOPRUNE 1": Did not attach to conversion_to_degrees.
+WARNING:Xst:616 - Invalid property "SYN_BLACK_BOX 1": Did not attach to YourInstanceName.
+WARNING:Xst:616 - Invalid property "SYN_NOPRUNE 1": Did not attach to YourInstanceName.
+
+
+Total REAL time to Xst completion: 48.00 secs
+Total CPU time to Xst completion: 48.41 secs
+ 
+--> 
+
+Total memory usage is 582504 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   31 (   0 filtered)
+Number of infos    :    9 (   0 filtered)
+

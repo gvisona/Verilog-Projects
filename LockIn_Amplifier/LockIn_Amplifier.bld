@@ -1,0 +1,54 @@
+Release 14.7 ngdbuild P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
+-intstyle ise -dd _ngo -sd Source Files -sd ipcore_dir -nt timestamp -uc Source
+Files/LockIn_Amplifier.ucf -p xc3s700an-fgg484-4 LockIn_Amplifier.ngc
+LockIn_Amplifier.ngd
+
+Reading NGO file
+"C:/Users/Giovanni/Documents/Laboratory_of_Advanced_Electronics/Progetto
+Finale/Versione Finale/Versione Wire/LockIn_Amplifier/LockIn_Amplifier.ngc" ...
+Loading design module "Source Files/ADC_Driver.ngc"...
+Loading design module "Source Files/DAC_Driver.ngc"...
+Loading design module "Source Files/OscillatorMultiplication.ngc"...
+Loading design module "Source Files/RectangularToPolar.ngc"...
+Loading design module "ipcore_dir/DegreeMultiplier.ngc"...
+Loading design module "ipcore_dir/PiDivider.ngc"...
+Loading design module "Source Files/LCD_Driver_pm10to4.ngc"...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "Source
+Files/LockIn_Amplifier.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+INFO:ConstraintSystem - The Period constraint <PERIOD = 20.000 ;> [Source
+   Files/LockIn_Amplifier.ucf(5)], is specified using the Net Period method
+   which is not recommended. Please use the Timespec PERIOD method.
+
+Done...
+
+Checking expanded design ...
+WARNING:NgdBuild:483 - Attribute "INIT" on
+   "YourInstanceName/blk00000003/sig000000a7" is on the wrong type of object. 
+   Please see the Constraints Guide for more information on this attribute.
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   1
+
+Total memory usage is 268652 kilobytes
+
+Writing NGD file "LockIn_Amplifier.ngd" ...
+Total REAL time to NGDBUILD completion:  6 sec
+Total CPU time to NGDBUILD completion:   6 sec
+
+Writing NGDBUILD log file "LockIn_Amplifier.bld"...

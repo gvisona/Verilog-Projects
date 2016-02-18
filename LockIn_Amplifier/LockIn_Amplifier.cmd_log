@@ -1,0 +1,149 @@
+xst -intstyle ise -ifn "C:/Users/Giovanni/Documents/Laboratory_of_Advanced_Electronics/Progetto Finale/Versione Finale/LockIn_Amplifier/LockIn_Amplifier.xst" -ofn "C:/Users/Giovanni/Documents/Laboratory_of_Advanced_Electronics/Progetto Finale/Versione Finale/LockIn_Amplifier/LockIn_Amplifier.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd "Source Files" -nt timestamp -uc "Source Files/LockIn_Amplifier.ucf" -p xc3s700an-fgg484-4 "LockIn_Amplifier.ngc" LockIn_Amplifier.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o LockIn_Amplifier_map.ncd LockIn_Amplifier.ngd LockIn_Amplifier.pcf 
+par -w -intstyle ise -ol high -t 1 LockIn_Amplifier_map.ncd LockIn_Amplifier.ncd LockIn_Amplifier.pcf 
+bitgen -intstyle ise -f LockIn_Amplifier.ut LockIn_Amplifier.ncd 
+xst -intstyle ise -ifn "C:/Users/Giovanni/Documents/Laboratory_of_Advanced_Electronics/Progetto Finale/Versione Finale/LockIn_Amplifier/LockIn_Amplifier.xst" -ofn "C:/Users/Giovanni/Documents/Laboratory_of_Advanced_Electronics/Progetto Finale/Versione Finale/LockIn_Amplifier/LockIn_Amplifier.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd "Source Files" -nt timestamp -uc "Source Files/LockIn_Amplifier.ucf" -p xc3s700an-fgg484-4 "LockIn_Amplifier.ngc" LockIn_Amplifier.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o LockIn_Amplifier_map.ncd LockIn_Amplifier.ngd LockIn_Amplifier.pcf 
+par -w -intstyle ise -ol high -t 1 LockIn_Amplifier_map.ncd LockIn_Amplifier.ncd LockIn_Amplifier.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml LockIn_Amplifier.twx LockIn_Amplifier.ncd -o LockIn_Amplifier.twr LockIn_Amplifier.pcf 
+bitgen -intstyle ise -f LockIn_Amplifier.ut LockIn_Amplifier.ncd 
+xst -intstyle ise -ifn "C:/Users/Giovanni/Documents/Laboratory_of_Advanced_Electronics/Progetto Finale/Versione Finale/LockIn_Amplifier/LockIn_Amplifier.xst" -ofn "C:/Users/Giovanni/Documents/Laboratory_of_Advanced_Electronics/Progetto Finale/Versione Finale/LockIn_Amplifier/LockIn_Amplifier.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd "Source Files" -nt timestamp -uc "Source Files/LockIn_Amplifier.ucf" -p xc3s700an-fgg484-4 "LockIn_Amplifier.ngc" LockIn_Amplifier.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o LockIn_Amplifier_map.ncd LockIn_Amplifier.ngd LockIn_Amplifier.pcf 
+par -w -intstyle ise -ol high -t 1 LockIn_Amplifier_map.ncd LockIn_Amplifier.ncd LockIn_Amplifier.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml LockIn_Amplifier.twx LockIn_Amplifier.ncd -o LockIn_Amplifier.twr LockIn_Amplifier.pcf 
+bitgen -intstyle ise -f LockIn_Amplifier.ut LockIn_Amplifier.ncd 
+xst -intstyle ise -ifn "C:/Users/Giovanni/Documents/Laboratory_of_Advanced_Electronics/Progetto Finale/Versione Finale/LockIn_Amplifier/LockIn_Amplifier.xst" -ofn "C:/Users/Giovanni/Documents/Laboratory_of_Advanced_Electronics/Progetto Finale/Versione Finale/LockIn_Amplifier/LockIn_Amplifier.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd "Source Files" -nt timestamp -uc "Source Files/LockIn_Amplifier.ucf" -p xc3s700an-fgg484-4 "LockIn_Amplifier.ngc" LockIn_Amplifier.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o LockIn_Amplifier_map.ncd LockIn_Amplifier.ngd LockIn_Amplifier.pcf 
+par -w -intstyle ise -ol high -t 1 LockIn_Amplifier_map.ncd LockIn_Amplifier.ncd LockIn_Amplifier.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml LockIn_Amplifier.twx LockIn_Amplifier.ncd -o LockIn_Amplifier.twr LockIn_Amplifier.pcf 
+bitgen -intstyle ise -f LockIn_Amplifier.ut LockIn_Amplifier.ncd 
+xst -intstyle ise -ifn "C:/Users/Giovanni/Documents/Laboratory_of_Advanced_Electronics/Progetto Finale/Versione Finale/LockIn_Amplifier/LockIn_Amplifier.xst" -ofn "C:/Users/Giovanni/Documents/Laboratory_of_Advanced_Electronics/Progetto Finale/Versione Finale/LockIn_Amplifier/LockIn_Amplifier.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd "Source Files" -nt timestamp -uc "Source Files/LockIn_Amplifier.ucf" -p xc3s700an-fgg484-4 "LockIn_Amplifier.ngc" LockIn_Amplifier.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o LockIn_Amplifier_map.ncd LockIn_Amplifier.ngd LockIn_Amplifier.pcf 
+par -w -intstyle ise -ol high -t 1 LockIn_Amplifier_map.ncd LockIn_Amplifier.ncd LockIn_Amplifier.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml LockIn_Amplifier.twx LockIn_Amplifier.ncd -o LockIn_Amplifier.twr LockIn_Amplifier.pcf 
+bitgen -intstyle ise -f LockIn_Amplifier.ut LockIn_Amplifier.ncd 
+xst -intstyle ise -ifn "C:/Users/Giovanni/Documents/Laboratory_of_Advanced_Electronics/Progetto Finale/Versione Finale/LockIn_Amplifier/LockIn_Amplifier.xst" -ofn "C:/Users/Giovanni/Documents/Laboratory_of_Advanced_Electronics/Progetto Finale/Versione Finale/LockIn_Amplifier/LockIn_Amplifier.syr" 
+xst -intstyle ise -ifn "C:/Users/Giovanni/Documents/Laboratory_of_Advanced_Electronics/Progetto Finale/Versione Finale/LockIn_Amplifier/LockIn_Amplifier.xst" -ofn "C:/Users/Giovanni/Documents/Laboratory_of_Advanced_Electronics/Progetto Finale/Versione Finale/LockIn_Amplifier/LockIn_Amplifier.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd "Source Files" -nt timestamp -uc "Source Files/LockIn_Amplifier.ucf" -p xc3s700an-fgg484-4 "LockIn_Amplifier.ngc" LockIn_Amplifier.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o LockIn_Amplifier_map.ncd LockIn_Amplifier.ngd LockIn_Amplifier.pcf 
+par -w -intstyle ise -ol high -t 1 LockIn_Amplifier_map.ncd LockIn_Amplifier.ncd LockIn_Amplifier.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml LockIn_Amplifier.twx LockIn_Amplifier.ncd -o LockIn_Amplifier.twr LockIn_Amplifier.pcf 
+bitgen -intstyle ise -f LockIn_Amplifier.ut LockIn_Amplifier.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd "Source Files" -nt timestamp -uc "Source Files/LockIn_Amplifier.ucf" -p xc3s700an-fgg484-4 "LockIn_Amplifier.ngc" LockIn_Amplifier.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o LockIn_Amplifier_map.ncd LockIn_Amplifier.ngd LockIn_Amplifier.pcf 
+par -w -intstyle ise -ol high -t 1 LockIn_Amplifier_map.ncd LockIn_Amplifier.ncd LockIn_Amplifier.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml LockIn_Amplifier.twx LockIn_Amplifier.ncd -o LockIn_Amplifier.twr LockIn_Amplifier.pcf 
+bitgen -intstyle ise -f LockIn_Amplifier.ut LockIn_Amplifier.ncd 
+xst -intstyle ise -ifn "C:/Users/Giovanni/Documents/Laboratory_of_Advanced_Electronics/Progetto Finale/Versione Finale/LockIn_Amplifier/LockIn_Amplifier.xst" -ofn "C:/Users/Giovanni/Documents/Laboratory_of_Advanced_Electronics/Progetto Finale/Versione Finale/LockIn_Amplifier/LockIn_Amplifier.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd "Source Files" -nt timestamp -uc "Source Files/LockIn_Amplifier.ucf" -p xc3s700an-fgg484-4 "LockIn_Amplifier.ngc" LockIn_Amplifier.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o LockIn_Amplifier_map.ncd LockIn_Amplifier.ngd LockIn_Amplifier.pcf 
+par -w -intstyle ise -ol high -t 1 LockIn_Amplifier_map.ncd LockIn_Amplifier.ncd LockIn_Amplifier.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml LockIn_Amplifier.twx LockIn_Amplifier.ncd -o LockIn_Amplifier.twr LockIn_Amplifier.pcf 
+bitgen -intstyle ise -f LockIn_Amplifier.ut LockIn_Amplifier.ncd 
+xst -intstyle ise -ifn "C:/Users/Giovanni/Documents/Laboratory_of_Advanced_Electronics/Progetto Finale/Versione Finale/LockIn_Amplifier/LockIn_Amplifier.xst" -ofn "C:/Users/Giovanni/Documents/Laboratory_of_Advanced_Electronics/Progetto Finale/Versione Finale/LockIn_Amplifier/LockIn_Amplifier.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd "Source Files" -nt timestamp -uc "Source Files/LockIn_Amplifier.ucf" -p xc3s700an-fgg484-4 "LockIn_Amplifier.ngc" LockIn_Amplifier.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o LockIn_Amplifier_map.ncd LockIn_Amplifier.ngd LockIn_Amplifier.pcf 
+par -w -intstyle ise -ol high -t 1 LockIn_Amplifier_map.ncd LockIn_Amplifier.ncd LockIn_Amplifier.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml LockIn_Amplifier.twx LockIn_Amplifier.ncd -o LockIn_Amplifier.twr LockIn_Amplifier.pcf 
+bitgen -intstyle ise -f LockIn_Amplifier.ut LockIn_Amplifier.ncd 
+xst -intstyle ise -ifn "C:/Users/Giovanni/Documents/Laboratory_of_Advanced_Electronics/Progetto Finale/Versione Finale/LockIn_Amplifier/LockIn_Amplifier.xst" -ofn "C:/Users/Giovanni/Documents/Laboratory_of_Advanced_Electronics/Progetto Finale/Versione Finale/LockIn_Amplifier/LockIn_Amplifier.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd "Source Files" -nt timestamp -uc "Source Files/LockIn_Amplifier.ucf" -p xc3s700an-fgg484-4 "LockIn_Amplifier.ngc" LockIn_Amplifier.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o LockIn_Amplifier_map.ncd LockIn_Amplifier.ngd LockIn_Amplifier.pcf 
+par -w -intstyle ise -ol high -t 1 LockIn_Amplifier_map.ncd LockIn_Amplifier.ncd LockIn_Amplifier.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml LockIn_Amplifier.twx LockIn_Amplifier.ncd -o LockIn_Amplifier.twr LockIn_Amplifier.pcf 
+bitgen -intstyle ise -f LockIn_Amplifier.ut LockIn_Amplifier.ncd 
+xst -intstyle ise -ifn "C:/Users/Giovanni/Documents/Laboratory_of_Advanced_Electronics/Progetto Finale/Versione Finale/LockIn_Amplifier/LockIn_Amplifier.xst" -ofn "C:/Users/Giovanni/Documents/Laboratory_of_Advanced_Electronics/Progetto Finale/Versione Finale/LockIn_Amplifier/LockIn_Amplifier.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd "Source Files" -nt timestamp -uc "Source Files/LockIn_Amplifier.ucf" -p xc3s700an-fgg484-4 "LockIn_Amplifier.ngc" LockIn_Amplifier.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o LockIn_Amplifier_map.ncd LockIn_Amplifier.ngd LockIn_Amplifier.pcf 
+par -w -intstyle ise -ol high -t 1 LockIn_Amplifier_map.ncd LockIn_Amplifier.ncd LockIn_Amplifier.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml LockIn_Amplifier.twx LockIn_Amplifier.ncd -o LockIn_Amplifier.twr LockIn_Amplifier.pcf 
+bitgen -intstyle ise -f LockIn_Amplifier.ut LockIn_Amplifier.ncd 
+xst -intstyle ise -ifn "C:/Users/Giovanni/Documents/Laboratory_of_Advanced_Electronics/Progetto Finale/Versione Finale/LockIn_Amplifier/LockIn_Amplifier.xst" -ofn "C:/Users/Giovanni/Documents/Laboratory_of_Advanced_Electronics/Progetto Finale/Versione Finale/LockIn_Amplifier/LockIn_Amplifier.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd "Source Files" -sd ipcore_dir -nt timestamp -uc "Source Files/LockIn_Amplifier.ucf" -p xc3s700an-fgg484-4 "LockIn_Amplifier.ngc" LockIn_Amplifier.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o LockIn_Amplifier_map.ncd LockIn_Amplifier.ngd LockIn_Amplifier.pcf 
+par -w -intstyle ise -ol high -t 1 LockIn_Amplifier_map.ncd LockIn_Amplifier.ncd LockIn_Amplifier.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml LockIn_Amplifier.twx LockIn_Amplifier.ncd -o LockIn_Amplifier.twr LockIn_Amplifier.pcf 
+bitgen -intstyle ise -f LockIn_Amplifier.ut LockIn_Amplifier.ncd 
+xst -intstyle ise -ifn "C:/Users/Giovanni/Documents/Laboratory_of_Advanced_Electronics/Progetto Finale/Versione Finale/LockIn_Amplifier/LockIn_Amplifier.xst" -ofn "C:/Users/Giovanni/Documents/Laboratory_of_Advanced_Electronics/Progetto Finale/Versione Finale/LockIn_Amplifier/LockIn_Amplifier.syr" 
+xst -intstyle ise -ifn "C:/Users/Giovanni/Documents/Laboratory_of_Advanced_Electronics/Progetto Finale/Versione Finale/LockIn_Amplifier/LockIn_Amplifier.xst" -ofn "C:/Users/Giovanni/Documents/Laboratory_of_Advanced_Electronics/Progetto Finale/Versione Finale/LockIn_Amplifier/LockIn_Amplifier.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd "Source Files" -sd ipcore_dir -nt timestamp -uc "Source Files/LockIn_Amplifier.ucf" -p xc3s700an-fgg484-4 "LockIn_Amplifier.ngc" LockIn_Amplifier.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o LockIn_Amplifier_map.ncd LockIn_Amplifier.ngd LockIn_Amplifier.pcf 
+par -w -intstyle ise -ol high -t 1 LockIn_Amplifier_map.ncd LockIn_Amplifier.ncd LockIn_Amplifier.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml LockIn_Amplifier.twx LockIn_Amplifier.ncd -o LockIn_Amplifier.twr LockIn_Amplifier.pcf 
+bitgen -intstyle ise -f LockIn_Amplifier.ut LockIn_Amplifier.ncd 
+xst -intstyle ise -ifn "C:/Users/Giovanni/Documents/Laboratory_of_Advanced_Electronics/Progetto Finale/Versione Finale/LockIn_Amplifier/LockIn_Amplifier.xst" -ofn "C:/Users/Giovanni/Documents/Laboratory_of_Advanced_Electronics/Progetto Finale/Versione Finale/LockIn_Amplifier/LockIn_Amplifier.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd "Source Files" -sd ipcore_dir -nt timestamp -uc "Source Files/LockIn_Amplifier.ucf" -p xc3s700an-fgg484-4 "LockIn_Amplifier.ngc" LockIn_Amplifier.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o LockIn_Amplifier_map.ncd LockIn_Amplifier.ngd LockIn_Amplifier.pcf 
+par -w -intstyle ise -ol high -t 1 LockIn_Amplifier_map.ncd LockIn_Amplifier.ncd LockIn_Amplifier.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml LockIn_Amplifier.twx LockIn_Amplifier.ncd -o LockIn_Amplifier.twr LockIn_Amplifier.pcf 
+bitgen -intstyle ise -f LockIn_Amplifier.ut LockIn_Amplifier.ncd 
+xst -intstyle ise -ifn "C:/Users/Giovanni/Documents/Laboratory_of_Advanced_Electronics/Progetto Finale/Versione Finale/LockIn_Amplifier/LockIn_Amplifier.xst" -ofn "C:/Users/Giovanni/Documents/Laboratory_of_Advanced_Electronics/Progetto Finale/Versione Finale/LockIn_Amplifier/LockIn_Amplifier.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd "Source Files" -sd ipcore_dir -nt timestamp -uc "Source Files/LockIn_Amplifier.ucf" -p xc3s700an-fgg484-4 "LockIn_Amplifier.ngc" LockIn_Amplifier.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o LockIn_Amplifier_map.ncd LockIn_Amplifier.ngd LockIn_Amplifier.pcf 
+par -w -intstyle ise -ol high -t 1 LockIn_Amplifier_map.ncd LockIn_Amplifier.ncd LockIn_Amplifier.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml LockIn_Amplifier.twx LockIn_Amplifier.ncd -o LockIn_Amplifier.twr LockIn_Amplifier.pcf 
+bitgen -intstyle ise -f LockIn_Amplifier.ut LockIn_Amplifier.ncd 
+xst -intstyle ise -ifn "C:/Users/Giovanni/Documents/Laboratory_of_Advanced_Electronics/Progetto Finale/Versione Finale/LockIn_Amplifier/LockIn_Amplifier.xst" -ofn "C:/Users/Giovanni/Documents/Laboratory_of_Advanced_Electronics/Progetto Finale/Versione Finale/LockIn_Amplifier/LockIn_Amplifier.syr" 
+xst -intstyle ise -ifn "C:/Users/Giovanni/Documents/Laboratory_of_Advanced_Electronics/Progetto Finale/Versione Finale/LockIn_Amplifier/LockIn_Amplifier.xst" -ofn "C:/Users/Giovanni/Documents/Laboratory_of_Advanced_Electronics/Progetto Finale/Versione Finale/LockIn_Amplifier/LockIn_Amplifier.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd "Source Files" -sd ipcore_dir -nt timestamp -uc "Source Files/LockIn_Amplifier.ucf" -p xc3s700an-fgg484-4 "LockIn_Amplifier.ngc" LockIn_Amplifier.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o LockIn_Amplifier_map.ncd LockIn_Amplifier.ngd LockIn_Amplifier.pcf 
+par -w -intstyle ise -ol high -t 1 LockIn_Amplifier_map.ncd LockIn_Amplifier.ncd LockIn_Amplifier.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml LockIn_Amplifier.twx LockIn_Amplifier.ncd -o LockIn_Amplifier.twr LockIn_Amplifier.pcf 
+bitgen -intstyle ise -f LockIn_Amplifier.ut LockIn_Amplifier.ncd 
+xst -intstyle ise -ifn "C:/Users/Giovanni/Documents/Laboratory_of_Advanced_Electronics/Progetto Finale/Versione Finale/LockIn_Amplifier/LockIn_Amplifier.xst" -ofn "C:/Users/Giovanni/Documents/Laboratory_of_Advanced_Electronics/Progetto Finale/Versione Finale/LockIn_Amplifier/LockIn_Amplifier.syr" 
+xst -intstyle ise -ifn "C:/Users/Giovanni/Documents/Laboratory_of_Advanced_Electronics/Progetto Finale/Versione Finale/LockIn_Amplifier/LockIn_Amplifier.xst" -ofn "C:/Users/Giovanni/Documents/Laboratory_of_Advanced_Electronics/Progetto Finale/Versione Finale/LockIn_Amplifier/LockIn_Amplifier.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd "Source Files" -sd ipcore_dir -nt timestamp -uc "Source Files/LockIn_Amplifier.ucf" -p xc3s700an-fgg484-4 "LockIn_Amplifier.ngc" LockIn_Amplifier.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o LockIn_Amplifier_map.ncd LockIn_Amplifier.ngd LockIn_Amplifier.pcf 
+par -w -intstyle ise -ol high -t 1 LockIn_Amplifier_map.ncd LockIn_Amplifier.ncd LockIn_Amplifier.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml LockIn_Amplifier.twx LockIn_Amplifier.ncd -o LockIn_Amplifier.twr LockIn_Amplifier.pcf 
+bitgen -intstyle ise -f LockIn_Amplifier.ut LockIn_Amplifier.ncd 
+xst -intstyle ise -ifn "C:/Users/Giovanni/Documents/Laboratory_of_Advanced_Electronics/Progetto Finale/Versione Finale/LockIn_Amplifier/LockIn_Amplifier.xst" -ofn "C:/Users/Giovanni/Documents/Laboratory_of_Advanced_Electronics/Progetto Finale/Versione Finale/LockIn_Amplifier/LockIn_Amplifier.syr" 
+xst -intstyle ise -ifn "C:/Users/Giovanni/Documents/Laboratory_of_Advanced_Electronics/Progetto Finale/Versione Finale/LockIn_Amplifier/LockIn_Amplifier.xst" -ofn "C:/Users/Giovanni/Documents/Laboratory_of_Advanced_Electronics/Progetto Finale/Versione Finale/LockIn_Amplifier/LockIn_Amplifier.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd "Source Files" -sd ipcore_dir -nt timestamp -uc "Source Files/LockIn_Amplifier.ucf" -p xc3s700an-fgg484-4 "LockIn_Amplifier.ngc" LockIn_Amplifier.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o LockIn_Amplifier_map.ncd LockIn_Amplifier.ngd LockIn_Amplifier.pcf 
+par -w -intstyle ise -ol high -t 1 LockIn_Amplifier_map.ncd LockIn_Amplifier.ncd LockIn_Amplifier.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml LockIn_Amplifier.twx LockIn_Amplifier.ncd -o LockIn_Amplifier.twr LockIn_Amplifier.pcf 
+bitgen -intstyle ise -f LockIn_Amplifier.ut LockIn_Amplifier.ncd 
+xst -intstyle ise -ifn "C:/Users/Giovanni/Documents/Laboratory_of_Advanced_Electronics/Progetto Finale/Versione Finale/LockIn_Amplifier/LockIn_Amplifier.xst" -ofn "C:/Users/Giovanni/Documents/Laboratory_of_Advanced_Electronics/Progetto Finale/Versione Finale/LockIn_Amplifier/LockIn_Amplifier.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd "Source Files" -sd ipcore_dir -nt timestamp -uc "Source Files/LockIn_Amplifier.ucf" -p xc3s700an-fgg484-4 "LockIn_Amplifier.ngc" LockIn_Amplifier.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o LockIn_Amplifier_map.ncd LockIn_Amplifier.ngd LockIn_Amplifier.pcf 
+par -w -intstyle ise -ol high -t 1 LockIn_Amplifier_map.ncd LockIn_Amplifier.ncd LockIn_Amplifier.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml LockIn_Amplifier.twx LockIn_Amplifier.ncd -o LockIn_Amplifier.twr LockIn_Amplifier.pcf 
+bitgen -intstyle ise -f LockIn_Amplifier.ut LockIn_Amplifier.ncd 
+xst -intstyle ise -ifn "C:/Users/Giovanni/Documents/Laboratory_of_Advanced_Electronics/Progetto Finale/Versione Finale/Versione Wire/LockIn_Amplifier/LockIn_Amplifier.xst" -ofn "C:/Users/Giovanni/Documents/Laboratory_of_Advanced_Electronics/Progetto Finale/Versione Finale/Versione Wire/LockIn_Amplifier/LockIn_Amplifier.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd "Source Files" -sd ipcore_dir -nt timestamp -uc "Source Files/LockIn_Amplifier.ucf" -p xc3s700an-fgg484-4 "LockIn_Amplifier.ngc" LockIn_Amplifier.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o LockIn_Amplifier_map.ncd LockIn_Amplifier.ngd LockIn_Amplifier.pcf 
+par -w -intstyle ise -ol high -t 1 LockIn_Amplifier_map.ncd LockIn_Amplifier.ncd LockIn_Amplifier.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml LockIn_Amplifier.twx LockIn_Amplifier.ncd -o LockIn_Amplifier.twr LockIn_Amplifier.pcf 
+bitgen -intstyle ise -f LockIn_Amplifier.ut LockIn_Amplifier.ncd 
+xst -intstyle ise -ifn "C:/Users/Giovanni/Documents/Laboratory_of_Advanced_Electronics/Progetto Finale/Versione Finale/Versione Wire/LockIn_Amplifier/LockIn_Amplifier.xst" -ofn "C:/Users/Giovanni/Documents/Laboratory_of_Advanced_Electronics/Progetto Finale/Versione Finale/Versione Wire/LockIn_Amplifier/LockIn_Amplifier.syr" 
+xst -intstyle ise -ifn "C:/Users/Giovanni/Documents/Laboratory_of_Advanced_Electronics/Progetto Finale/Versione Finale/Versione Wire/LockIn_Amplifier/LockIn_Amplifier.xst" -ofn "C:/Users/Giovanni/Documents/Laboratory_of_Advanced_Electronics/Progetto Finale/Versione Finale/Versione Wire/LockIn_Amplifier/LockIn_Amplifier.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd "Source Files" -sd ipcore_dir -nt timestamp -uc "Source Files/LockIn_Amplifier.ucf" -p xc3s700an-fgg484-4 "LockIn_Amplifier.ngc" LockIn_Amplifier.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o LockIn_Amplifier_map.ncd LockIn_Amplifier.ngd LockIn_Amplifier.pcf 
+par -w -intstyle ise -ol high -t 1 LockIn_Amplifier_map.ncd LockIn_Amplifier.ncd LockIn_Amplifier.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml LockIn_Amplifier.twx LockIn_Amplifier.ncd -o LockIn_Amplifier.twr LockIn_Amplifier.pcf 
+bitgen -intstyle ise -f LockIn_Amplifier.ut LockIn_Amplifier.ncd 
+xst -intstyle ise -ifn "C:/Users/Giovanni/Documents/Laboratory_of_Advanced_Electronics/Progetto Finale/Versione Finale/Versione Wire/LockIn_Amplifier/LockIn_Amplifier.xst" -ofn "C:/Users/Giovanni/Documents/Laboratory_of_Advanced_Electronics/Progetto Finale/Versione Finale/Versione Wire/LockIn_Amplifier/LockIn_Amplifier.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd "Source Files" -sd ipcore_dir -nt timestamp -uc "Source Files/LockIn_Amplifier.ucf" -p xc3s700an-fgg484-4 "LockIn_Amplifier.ngc" LockIn_Amplifier.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o LockIn_Amplifier_map.ncd LockIn_Amplifier.ngd LockIn_Amplifier.pcf 
+par -w -intstyle ise -ol high -t 1 LockIn_Amplifier_map.ncd LockIn_Amplifier.ncd LockIn_Amplifier.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml LockIn_Amplifier.twx LockIn_Amplifier.ncd -o LockIn_Amplifier.twr LockIn_Amplifier.pcf 
+bitgen -intstyle ise -f LockIn_Amplifier.ut LockIn_Amplifier.ncd 
+xst -intstyle ise -ifn "C:/Users/Giovanni/Documents/Laboratory_of_Advanced_Electronics/Progetto Finale/Versione Finale/Versione Wire/LockIn_Amplifier/LockIn_Amplifier.xst" -ofn "C:/Users/Giovanni/Documents/Laboratory_of_Advanced_Electronics/Progetto Finale/Versione Finale/Versione Wire/LockIn_Amplifier/LockIn_Amplifier.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd "Source Files" -sd ipcore_dir -nt timestamp -uc "Source Files/LockIn_Amplifier.ucf" -p xc3s700an-fgg484-4 "LockIn_Amplifier.ngc" LockIn_Amplifier.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o LockIn_Amplifier_map.ncd LockIn_Amplifier.ngd LockIn_Amplifier.pcf 
+par -w -intstyle ise -ol high -t 1 LockIn_Amplifier_map.ncd LockIn_Amplifier.ncd LockIn_Amplifier.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml LockIn_Amplifier.twx LockIn_Amplifier.ncd -o LockIn_Amplifier.twr LockIn_Amplifier.pcf 
+bitgen -intstyle ise -f LockIn_Amplifier.ut LockIn_Amplifier.ncd 
+xst -intstyle ise -ifn "C:/Users/Giovanni/Documents/Laboratory_of_Advanced_Electronics/Progetto Finale/Versione Finale/Versione Wire/LockIn_Amplifier/LockIn_Amplifier.xst" -ofn "C:/Users/Giovanni/Documents/Laboratory_of_Advanced_Electronics/Progetto Finale/Versione Finale/Versione Wire/LockIn_Amplifier/LockIn_Amplifier.syr" 
+xst -intstyle ise -ifn "C:/Users/Giovanni/Documents/Laboratory_of_Advanced_Electronics/Progetto Finale/Versione Finale/Versione Wire/LockIn_Amplifier/LockIn_Amplifier.xst" -ofn "C:/Users/Giovanni/Documents/Laboratory_of_Advanced_Electronics/Progetto Finale/Versione Finale/Versione Wire/LockIn_Amplifier/LockIn_Amplifier.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd "Source Files" -sd ipcore_dir -nt timestamp -uc "Source Files/LockIn_Amplifier.ucf" -p xc3s700an-fgg484-4 "LockIn_Amplifier.ngc" LockIn_Amplifier.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o LockIn_Amplifier_map.ncd LockIn_Amplifier.ngd LockIn_Amplifier.pcf 
+par -w -intstyle ise -ol high -t 1 LockIn_Amplifier_map.ncd LockIn_Amplifier.ncd LockIn_Amplifier.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml LockIn_Amplifier.twx LockIn_Amplifier.ncd -o LockIn_Amplifier.twr LockIn_Amplifier.pcf 
+bitgen -intstyle ise -f LockIn_Amplifier.ut LockIn_Amplifier.ncd 
